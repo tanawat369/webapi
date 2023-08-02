@@ -7,7 +7,7 @@ const router = express.Router()
 router.get("/",(req,res)=>{
     res.status(200)
     res.type("text/html")
-    //res.sendFile(indexPage)
+    //res.sendFile(indexPage ...)
     res.sendFile(path.join(__dirname,'../template/index.html'))
   })
   router.get("/page1",(req,res)=>{
